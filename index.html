@@ -5,24 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
   <title>TabNet</title>
   <script type="module" crossorigin src="/assets/umi.js"></script>
-
-  <!-- 重定向逻辑 -->
-  <script>
-    window.onload = function() {
-      // 获取完整的当前 URL
-      const currentUrl = window.location.href;
-
-      // 检查 URL 是否包含 "index.php#" 且带有查询参数
-      const indexPhpPosition = currentUrl.indexOf("index.php#");
-      if (indexPhpPosition !== -1) {
-        // 保留查询参数并生成新的 URL
-        const newUrl = currentUrl.substring(0, indexPhpPosition) + currentUrl.substring(indexPhpPosition + 10); // 去掉 "index.php"
-        
-        // 重定向到新 URL，保留 fragment 和查询参数
-        window.location.replace(newUrl);
-      }
-    };
-  </script>
 </head>
 <body>
   <script src="./env.js"></script>
@@ -36,9 +18,9 @@
     }
 
     // 判断QQUA的代码无需修改
-    function is_weixn_qq() {
+    function is_weixn_qq(){
       var ua = navigator.userAgent.toLowerCase();
-      if (ua.match(/MicroMessenger/i) == "micromessenger") {
+      if(ua.match(/MicroMessenger/i)=="micromessenger") {
         return "weixin";
       } else if (ua.match(/QQ/i) == "qq") {
         return "QQ";
@@ -49,14 +31,11 @@
 
   <!-- Crisp 聊天插件 -->
   <script type="text/javascript">
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "54e550e4-66fc-4031-b121-581b7e38a322";
-    (function() {
-      d = document;
-      s = d.createElement("script");
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("head")[0].appendChild(s);
+    window.$crisp=[];window.CRISP_WEBSITE_ID="54e550e4-66fc-4031-b121-581b7e38a322";
+    (function(){
+      d=document;s=d.createElement("script");
+      s.src="https://client.crisp.chat/l.js";
+      s.async=1;d.getElementsByTagName("head")[0].appendChild(s);
     })();
   </script>
 </body>
