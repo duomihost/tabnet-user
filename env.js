@@ -1,5 +1,5 @@
 // API地址
-window.routerBase = 'https://4.216.209.253/'
+window.routerBase = 'https://9qg679w6cc.r.worldssl.net/'
 window.settings = {
   // 站点名称
   title: '熊猫云村(TabNet)',
