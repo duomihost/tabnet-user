@@ -1,5 +1,5 @@
 // API地址
-window.routerBase = 'https://8.130.21.214/'
+window.routerBase = 'https://test.dmhosts.com/'
 window.settings = {
   // 站点名称
   title: '熊猫云村(TabNet)',
